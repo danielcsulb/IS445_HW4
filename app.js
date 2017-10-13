@@ -19,14 +19,12 @@ if (message >= 2 && message <= 10) {
 
     const output2 = document.getElementById("output2")
     output2.innerHTML = 'The number of times to divide the number  ' + message + ' by 2 to get a value lower than one millionth is '+ counter;
+
+    div.innerHTML = message * '*'
        
 }
 
 
-// if ((message > 1) || (message < 11)) {
-// const output2 = document.getElementById("output2")
-// output2.innerHTML = 'The number of time to divide the number ' + message + ' by 2 to get a value less than one millionth is ' 
-// }
 
 if ( message <= 1 || message >= 11) {
     const output = document.getElementById("output")
