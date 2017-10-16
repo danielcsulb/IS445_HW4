@@ -20,29 +20,37 @@ if (message >= 2 && message <= 10) {
     const output2 = document.getElementById("output2")
     output2.innerHTML = 'The number of times to divide the number  ' + message + ' by 2 to get a value lower than one millionth is '+ counter;
    
-
-  function pattern1(){
-    //var i;
-    var i = message;
-    message=i;
-       for (var i = message; i >0 ; i--)
+const pattern = document.getElementById("pattern");
+    i=message;
+    
+    
+       function p()
        {
-           for (var j=message; j<= i; j++)
-            {
-             //console.log("* ");
-             const pattern = document.getElementById("pattern")
-             pattern.innerHTML = "* ";   
-            }
-            //console.log("\n");
-            const pattern = document.getElementById("pattern")
-            pattern.innerHTML = "\n";
+
+           for ( i=1; i<=message; i++)
+           {
+               for (j=message; j>=i; j--)
+                {
+                 document.getElementById("pattern").innerHTML += "* ";
+                    
+                // document.write("* ");
+             
+                // document.write("* ");
+                
+                // pattern.innerHTML = ("* ");
+
+                }
+                document.getElementById("pattern").innerHTML += "<br>";
+              
+                // document.write("<br>");
+                // pattern.innerHTML = ("<br>");
+    
+           }
+    
        }
-    }
    
 
-    //const pattern = document.getElementById("pattern")
-    pattern.innerHTML = pattern1();
-   
+    p();
 
 
 
@@ -51,8 +59,16 @@ if (message >= 2 && message <= 10) {
 
 if ( message <= 1 || message >= 11) {
     const output = document.getElementById("output")
-    output.innerHTML = 'Your input is ' + message + '. The valid input number is between 2 and 10. Please reload this page and try again.'
+    output.innerHTML = 'Your input is '.fontcolor("red") + message.fontcolor("red") + '. The valid input number is between 2 and 10. Please reload this page and try again.'.fontcolor("red")
     }
 
-
+if ( message==="") {
+    const output = document.getElementById("output")
+    output.innerHTML = 'Your input is not valid. Enter a number between 2 and 10. Please reload this page and try again.'.fontcolor("red")
+    }
+if (isNaN(message) ) {
+    const output = document.getElementById("output")
+    output.innerHTML = 'Your input is not valid. Enter a number between 2 and 10. Please reload this page and try again.'.fontcolor("red")
+        }
+        
     

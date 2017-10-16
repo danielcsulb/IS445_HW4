@@ -1,4 +1,24 @@
+
 body { 
+    font-size :30px; 
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 20px;
+
+}
+
+#output {
+    font-size: 25px;
+}
+
+#output2 {
+    font-size: 25px;
 
 
+}
+
+#pattern {
+    height: 30%;
+    width: 100%;
+    border: 5px solid green;
 }
