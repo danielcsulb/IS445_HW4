@@ -1,0 +1,27 @@
+{
+    "name": "IS445_HW4",
+    "version": "1.0.0",
+    "description": "HW4",
+    "engines": {
+        "node": ">=8.2.0"
+    },
+    "main": "server.js",
+    "scripts": {
+        "start": "node server",
+        "deploy": "gcloud app deploy",
+        "browser": "gcloud app browse"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/danielcsulb/IS445_HW4.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/danielcsulb/IS445_HW4/issues"
+    },
+    "homepage": "https://github.com/danielcsulb/IS445_HW4/blob/master/README.md",
+    "dependencies": {
+        "express": "^4.15.4"
+    }
+}
